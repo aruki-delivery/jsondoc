@@ -3,9 +3,9 @@ defmodule JSONDoc.Mixfile do
 
   def project do
     [app: :jsondoc,
-      version: "0.7.0",
+      version: "0.7.1",
       language: :erlang,
-      erlc_options: [{:platform_define, "R1(1|2|3|4|5|6)", 'JSONDOC_NO_MAPS'}],
+      erlc_options: [{:platform_define, "R1(1|2|3|4|5|6)", 'JSONDOC_NO_MAPS'}, :debug_info],
       deps: deps(Mix.env()),
       description: "Erlang service handling json documents and templates",
       package: package(),
